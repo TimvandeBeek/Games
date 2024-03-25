@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const ball = document.getElementById('ball');
     const goal = document.getElementById('goal');
     const gameContainer = document.getElementById('game-container');
-    const containerRect = gameContainer.getBoundingClientRect();
 
     // Beweging van de bal
     document.addEventListener('keydown', function(event) {
@@ -29,8 +28,6 @@ document.addEventListener("DOMContentLoaded", function() {
         // Controleer winvoorwaarde
         if (checkCollision(ball, goal)) {
             alert('Gefeliciteerd! Je hebt gewonnen!');
-            alert(containerRect.left)
-            
         }
     });
 
